@@ -113,7 +113,7 @@ export default function Home() {
           <div className="max-w-2xl space-y-6 text-body-lg text-ink-soft leading-relaxed">
             <p>
               My career has been shaped, in no small part, by my wife{" "}
-              <span className="text-ink">Helene</span>. She's a doctor in the
+              <span className="text-ink">Helene</span>. She’s a doctor in the
               Navy — her postings have taken us across the world, and each new
               city marked a new pivot. Clinical research at{" "}
               <span className="text-ink">Harvard</span>. Management consulting
@@ -130,7 +130,7 @@ export default function Home() {
               working order.
             </p>
             <p className="text-ink-muted">
-              Good work needs good habits. Good habits become virtues. That's
+              Good work needs good habits. Good habits become virtues. That’s
               the through-line.
             </p>
           </div>
