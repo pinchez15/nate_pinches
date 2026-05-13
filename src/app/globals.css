@@ -99,6 +99,16 @@ body {
   background-size: 100% 1px;
 }
 
+/* Focus ring — accent on warm paper, never browser-default blue */
+:where(a, button, [tabindex]):focus {
+  outline: none;
+}
+:where(a, button, [tabindex]):focus-visible {
+  outline: 2px solid var(--color-accent);
+  outline-offset: 3px;
+  border-radius: 1px;
+}
+
 /* External link arrow */
 .link-arrow::after {
   content: "  →";
