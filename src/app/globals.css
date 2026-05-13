@@ -1,26 +1,116 @@
 @import "tailwindcss";
 
-:root {
-  --background: #ffffff;
-  --foreground: #171717;
-}
-
 @theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
+  /* Colors — warm paper aesthetic, see DESIGN.md */
+  --color-paper: #F4F1EA;
+  --color-paper-sunk: #EBE6DB;
+  --color-ink: #1A1814;
+  --color-ink-soft: #3A3530;
+  --color-ink-muted: #6B6359;
+  --color-ink-faint: #A39B8E;
+  --color-accent: #B8410E;
+  --color-accent-deep: #8C2F09;
+  --color-gold: #B8893E;
+
+  /* Fonts — wired via next/font in layout.tsx */
+  --font-display: var(--font-fraunces);
+  --font-sans: var(--font-inter-tight);
+  --font-mono: var(--font-ibm-plex-mono);
+
+  /* Type scale — display sizes use clamp for responsive */
+  --text-display-xl: clamp(2.75rem, 6.2vw, 5.75rem);
+  --text-display-xl--line-height: 1.05;
+  --text-display-xl--letter-spacing: -0.025em;
+
+  --text-display-lg: clamp(2rem, 4vw, 3.25rem);
+  --text-display-lg--line-height: 1.1;
+  --text-display-lg--letter-spacing: -0.02em;
+
+  --text-proof: clamp(3rem, 6vw, 5rem);
+  --text-proof--line-height: 1;
+  --text-proof--letter-spacing: -0.02em;
+
+  --text-section: 1.625rem;
+  --text-section--line-height: 1.2;
+  --text-section--letter-spacing: -0.01em;
+
+  --text-card: 1.375rem;
+  --text-card--line-height: 1.25;
+  --text-card--letter-spacing: -0.005em;
+
+  --text-body-lg: 1.125rem;
+  --text-body-lg--line-height: 1.55;
+
+  --text-meta: 0.75rem;
+  --text-meta--line-height: 1.4;
+  --text-meta--letter-spacing: 0.06em;
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
+html {
+  background: var(--color-paper);
 }
 
 body {
-  background: var(--background);
-  color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+  background: var(--color-paper);
+  color: var(--color-ink);
+  font-family: var(--font-sans);
+  font-feature-settings: "ss01", "ss02", "cv11";
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-rendering: optimizeLegibility;
+}
+
+/* Display headings get the Fraunces opsz axis at large sizes */
+.font-display {
+  font-feature-settings: "ss01", "ss02";
+  font-optical-sizing: auto;
+  font-variation-settings: "opsz" 144;
+}
+
+/* Mono labels — small caps feel for status badges */
+.label {
+  font-family: var(--font-mono);
+  font-size: var(--text-meta);
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--color-ink-muted);
+}
+
+/* Tabular numbers for the proof strip */
+.proof-num {
+  font-family: var(--font-display);
+  font-variant-numeric: lining-nums tabular-nums;
+  font-feature-settings: "lnum", "tnum";
+}
+
+/* Inline link treatment — accent underline on hover only */
+.link {
+  color: inherit;
+  text-decoration: none;
+  background-image: linear-gradient(currentColor, currentColor);
+  background-size: 0% 1px;
+  background-position: 0 100%;
+  background-repeat: no-repeat;
+  transition: background-size 180ms ease-out, color 180ms ease-out;
+}
+.link:hover {
+  color: var(--color-accent-deep);
+  background-image: linear-gradient(var(--color-accent-deep), var(--color-accent-deep));
+  background-size: 100% 1px;
+}
+
+/* External link arrow */
+.link-arrow::after {
+  content: "  →";
+  display: inline-block;
+  transition: transform 120ms ease-out;
+}
+.link-arrow:hover::after {
+  transform: translateX(3px);
+}
+
+/* Selection */
+::selection {
+  background: var(--color-accent);
+  color: var(--color-paper);
 }
