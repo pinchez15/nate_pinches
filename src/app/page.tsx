@@ -110,7 +110,7 @@ export default function Home() {
         {/* Background ------------------------------------------------------ */}
         <section className="border-t border-ink-faint/40 pt-14 pb-24 sm:pb-32">
           <h2 className="label mb-10">Background</h2>
-          <div className="max-w-2xl space-y-6 text-body-lg text-ink-soft leading-relaxed">
+          <div className="max-w-xl space-y-6 text-body-lg text-ink-soft leading-relaxed">
             <p>
               My career has been shaped, in no small part, by my wife{" "}
               <span className="text-ink">Helene</span>. She’s a doctor in the
