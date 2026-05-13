@@ -91,7 +91,7 @@ body {
   background-size: 0% 1px;
   background-position: 0 100%;
   background-repeat: no-repeat;
-  transition: background-size 180ms ease-out, color 180ms ease-out;
+  transition: background-size 150ms ease-out, color 150ms ease-out;
 }
 .link:hover {
   color: var(--color-accent-deep);
