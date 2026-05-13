@@ -42,12 +42,14 @@ const projects: Project[] = [
     status: "pilot, Uganda",
     description:
       "Clinical documentation for low-resource clinics. Built for the doctor with no admin staff and a patient already waiting.",
+    href: "https://www.karibu.health",
   },
   {
     name: "Knock",
     status: "in development",
     description:
       "AI-native recruiting. Sourcing and screening as one continuous loop, not a pipeline of disconnected tools.",
+    href: "https://www.knockrecruit.io",
   },
   {
     name: "Household",
@@ -172,6 +174,16 @@ export default function Home() {
             <li>
               <a href="mailto:nate@cappawork.com" className="link">
                 nate@cappawork.com
+              </a>
+            </li>
+            <li>
+              <a
+                href="https://natepinches.substack.com/"
+                target="_blank"
+                rel="noreferrer"
+                className="link link-arrow"
+              >
+                Substack
               </a>
             </li>
             <li>
