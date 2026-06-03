@@ -62,20 +62,21 @@ body {
   text-rendering: optimizeLegibility;
 }
 
-/* Logo watermark — a faint, fixed backdrop of the NP mark behind all content.
-   Restraint: very low opacity so it reads as a texture, not a graphic. Sits at
-   z-index -1 above the paper canvas but below text. See DESIGN.md → Layout. */
-body::before {
-  content: "";
+/* Logo watermark — a faint NP mark behind all content. A real element (see
+   LogoBackdrop.tsx) so it can drift upward on scroll, keeping body copy legible.
+   Restraint: low opacity so it reads as texture. Sits at z-index -1 above the
+   paper canvas (on <html>) but below text. See DESIGN.md → Layout / Motion. */
+.logo-backdrop {
   position: fixed;
   inset: 0;
   z-index: -1;
   pointer-events: none;
   background-image: url("/np_logo.svg");
   background-repeat: no-repeat;
-  background-position: center 40%;
+  background-position: center 38%;
   background-size: min(82vw, 820px);
-  opacity: 0.1;
+  opacity: 0.09;
+  will-change: transform;
 }
 
 /* Display headings get the Fraunces opsz axis at large sizes */
