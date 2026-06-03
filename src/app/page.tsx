@@ -119,15 +119,33 @@ export default function Home() {
           </ul>
         </section>
 
+        {/* Work with me --------------------------------------------------- */}
+        <section className="border-t border-ink-faint/40 pt-14 pb-24 sm:pb-32">
+          <h2 className="label mb-10">Work with me</h2>
+          <div className="max-w-xl space-y-6 text-body-lg text-ink-soft leading-relaxed">
+            <p>
+              I build through my studio,{" "}
+              <span className="text-ink">CappaWork</span> — strategy, analytics,
+              and software for founder-led teams. If there’s something you want
+              made, that’s where to start.
+            </p>
+          </div>
+          <p className="mt-8">
+            <a
+              href="https://www.cappawork.com"
+              target="_blank"
+              rel="noreferrer"
+              className="link link-arrow text-body-lg text-ink"
+            >
+              www.cappawork.com
+            </a>
+          </p>
+        </section>
+
         {/* Contact --------------------------------------------------------- */}
         <section className="border-t border-ink-faint/40 pt-14 pb-32 sm:pb-44">
           <h2 className="label mb-10">Get in touch</h2>
           <ul className="flex flex-col gap-4 font-mono text-base text-ink">
-            <li>
-              <a href="mailto:nate@cappawork.com" className="link">
-                nate@cappawork.com
-              </a>
-            </li>
             <li>
               <a
                 href="https://natepinches.substack.com/"
