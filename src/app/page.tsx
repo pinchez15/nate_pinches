@@ -65,7 +65,7 @@ export default function Home() {
                 <span className="block font-mono text-meta uppercase text-ink-muted">
                   {p.line1}
                 </span>
-                <span className="block font-mono text-[0.75rem] text-ink-muted/85 leading-snug">
+                <span className="block font-mono text-meta tracking-normal text-ink-muted/85">
                   {p.line2}
                 </span>
               </li>
