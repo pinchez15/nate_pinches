@@ -51,13 +51,31 @@ html {
 }
 
 body {
-  background: var(--color-paper);
+  /* No background here — paper lives on <html> so the fixed logo watermark
+     (body::before, z-index -1) paints above the canvas and below content.
+     A background on body would paint over the watermark and hide it. */
   color: var(--color-ink);
   font-family: var(--font-sans);
   font-feature-settings: "ss01", "ss02", "cv11";
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   text-rendering: optimizeLegibility;
+}
+
+/* Logo watermark — a faint, fixed backdrop of the NP mark behind all content.
+   Restraint: very low opacity so it reads as a texture, not a graphic. Sits at
+   z-index -1 above the paper canvas but below text. See DESIGN.md → Layout. */
+body::before {
+  content: "";
+  position: fixed;
+  inset: 0;
+  z-index: -1;
+  pointer-events: none;
+  background-image: url("/np_logo.svg");
+  background-repeat: no-repeat;
+  background-position: center 40%;
+  background-size: min(82vw, 820px);
+  opacity: 0.1;
 }
 
 /* Display headings get the Fraunces opsz axis at large sizes */

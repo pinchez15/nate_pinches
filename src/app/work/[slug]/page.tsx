@@ -51,7 +51,7 @@ export default async function WorkDetail({
   if (!project) notFound();
 
   return (
-    <main className="min-h-screen bg-paper text-ink">
+    <main className="min-h-screen text-ink">
       <div className="mx-auto w-full max-w-6xl px-6 sm:px-10 lg:px-20 xl:px-28">
         {/* Top nav back to the work grid */}
         <div className="pt-16 sm:pt-20">

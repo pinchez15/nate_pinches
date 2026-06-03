@@ -27,7 +27,7 @@ const proofPoints: { value: string; line1: string; line2: string; lead?: boolean
 
 export default function Home() {
   return (
-    <main className="min-h-screen bg-paper text-ink">
+    <main className="min-h-screen text-ink">
       {/* Container — left-anchored, asymmetric, generous left inset on desktop */}
       <div className="mx-auto w-full max-w-6xl px-6 sm:px-10 lg:px-20 xl:px-28">
 

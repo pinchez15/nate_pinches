@@ -1,0 +1,7 @@
+<svg viewBox="-12.0 -43.0 262.0 262.0" xmlns="http://www.w3.org/2000/svg" fill="none">
+  <style>
+    path { stroke: #1a1a1a; }
+    @media (prefers-color-scheme: dark) { path { stroke: #f3efe7; } }
+  </style>
+  <path d="M21.7561 171.605C54.3011 163.406 78.7098 88.5899 64.4715 2.50025C93.2872 176.729 140.981 178.268 131.595 171.605C109.221 155.719 103.119 70.1419 148.885 2.50025M68.5395 117.286C248.877 79.366 342.952 -55.9177 6.50064 39.3958" stroke-width="17" stroke-linecap="round"/>
+</svg>
