@@ -132,10 +132,10 @@ body::before {
 .link-arrow::after {
   content: "  →";
   display: inline-block;
-  transition: transform 120ms ease-out;
+  transition: transform 100ms ease-out;
 }
 .link-arrow:hover::after {
-  transform: translateX(3px);
+  transform: translateX(4px);
 }
 
 /* Card entrance — fade + 12px rise on scroll-into-view, staggered via
