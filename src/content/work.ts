@@ -183,7 +183,7 @@ export const work: WorkProject[] = [
     tagline: "Why AI search won’t cite you, and what to fix.",
     status: "shipped",
     cardDescription:
-      "Patients search differently now. Instead of “pediatrician in Scranton,” it’s “what rash is this — do I need to go in?” — and they click through AI chat, not blue links on Google. SEO becomes AIO; we built Healthcare AIO to help providers get found in AI.",
+      "Patients search differently now — “what rash is this?” over “pediatrician near me,” answered in AI chat, not blue links. SEO becomes AIO. We built Healthcare AIO to help providers get found in AI.",
     problem:
       "Patients increasingly ask AI search engines for provider recommendations. A hospital that isn’t cited is invisible at the moment of intent — and there’s no “page two” to inspect.",
     solution:
@@ -218,7 +218,7 @@ export const work: WorkProject[] = [
     tagline: "Turn finished engagements into the next conversation.",
     status: "client build",
     cardDescription:
-      "A world-class economics firm needed a website and client portal to match their quality. We refreshed the brand, leveled up the site, and shipped a portal that lets them tell the story of their insights — without burying it in slides.",
+      "A world-class economics firm needed a site and client portal to match their quality. We refreshed the brand and shipped a portal that tells the story of their insights — without burying it in slides.",
     problem:
       "A world-class economics firm had insight to match anyone, but the work went cold the moment an engagement ended. Deliverables decayed in an inbox, and the friction of re-engaging killed follow-on deals.",
     solution:
@@ -251,7 +251,7 @@ export const work: WorkProject[] = [
     tagline: "AI prepares, the advisor delivers.",
     status: "in development",
     cardDescription:
-      "Financial advisors are in the midst of a seismic shift — a vast wealth transfer, a consolidated market, Millennials who want proof before they trust, and AI that can do part of the job for free. They need a platform to do the human parts of the work at scale, and to build their own investment edge.",
+      "Financial advisors face a seismic shift: a vast wealth transfer, a consolidated market, and AI doing parts of the job for free. They need to do the human parts at scale — and build their own edge.",
     problem:
       "A solo or small fiduciary RIA runs on a fragmented, expensive stack — CRM, spreadsheets, a research analyst — under strict SEC books-and-records obligations that generic SaaS doesn’t satisfy.",
     solution:
@@ -319,7 +319,7 @@ export const work: WorkProject[] = [
     tagline: "The small daily rhythms that hold a family together.",
     status: "in development",
     cardDescription:
-      "Big families are busy — and busy isn’t always good. Grow your talents, nurture your gifts, and share your joy by knowing what each kid needs, when. A Catholic platform for stewarding the domestic church, so you control the schedule, not the other way around.",
+      "Big families are busy — and busy isn’t always good. A Catholic platform for stewarding the domestic church: know what each kid needs and when, so you control the schedule, not the other way around.",
     problem: "",
     solution: "",
     hard: "",
