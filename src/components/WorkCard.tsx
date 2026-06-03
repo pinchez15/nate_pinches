@@ -55,6 +55,16 @@ export function WorkCard({ project, index }: { project: WorkProject; index: numb
         )}
       </h3>
       <p className="text-base italic text-ink-muted">{project.title}</p>
+      {project.liveHref && (
+        <a
+          href={project.liveHref}
+          target="_blank"
+          rel="noreferrer"
+          className="link link-arrow font-mono text-meta text-ink-soft"
+        >
+          {project.liveHref.replace(/^https?:\/\//, "")}
+        </a>
+      )}
       <p className="text-base leading-relaxed text-ink-soft">
         {project.cardDescription}
       </p>

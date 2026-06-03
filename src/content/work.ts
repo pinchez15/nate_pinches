@@ -65,7 +65,7 @@ export const work: WorkProject[] = [
       "I needed a CRM, a pipeline, a client portal, and a task tracker. I also needed a way to talk to it when a good idea hit while walking my girls to school. Six tools that don’t talk to each other wouldn’t cut it, so I built one platform that does it all.",
       "Claude runs the prospect research and the pipeline work. The public site is built to be found by AI agents, not just people. And I run the whole thing by voice, from my phone, through an MCP server.",
     ],
-    liveHref: "https://cappawork.com",
+    liveHref: "https://www.cappawork.com",
     hasDetail: true,
   },
   {
@@ -209,6 +209,7 @@ export const work: WorkProject[] = [
       "Patients search differently now. It’s not “pediatrician in Scranton” anymore. It’s “what rash is this — do I need to go in?” And they don’t click blue links on Google. They click through AI chat.",
       "SEO is becoming AIO. We built Healthcare AIO to measure how a provider actually shows up in ChatGPT and Perplexity, then show them exactly what to fix. Every claim about a physician is checked against the federal registry, so the audit is grounded in real records, not model guesses.",
     ],
+    liveHref: "https://www.healthcareaio.com",
     hasDetail: true,
   },
   {
@@ -242,6 +243,7 @@ export const work: WorkProject[] = [
       "A world-class economics firm had insight to match anyone — and a website that didn’t show it. So we refreshed the brand and leveled up the feel of the site.",
       "Then we shipped a client portal. It lets them tell the story of their work to each client, in one place, without burying it in a deck of slides. The next engagement comes from the relationship staying warm, not from a cold pitch.",
     ],
+    liveHref: "https://www.horizondatapartners.com",
     hasDetail: true,
   },
   {

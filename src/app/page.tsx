@@ -93,9 +93,9 @@ export default function Home() {
             <p>
               It’s the most excited I’ve been in my career, because it’s finally
               converging:{" "}
-              <em className="font-display italic text-ink">
+              <span className="text-ink">
                 strategy, analytics, product development, and software
-              </em>
+              </span>
               {" "}— all of it standing on good habits.
             </p>
             <p className="text-ink-muted">
