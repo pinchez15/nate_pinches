@@ -308,6 +308,7 @@ export const work: WorkProject[] = [
     summary75:
       "WorkPortfolio.io is a zero-config portfolio builder, but the real artifact is how it was built. A complete, multi-tenant SaaS: auth, billing, file storage, a custom analytics pipeline, SEO, and a hardened deploy, shipped by directing AI coding agents rather than coding the conventional way. The product itself missed product-market fit; its lasting value was proving fast self-direction on an unfamiliar stack and a firsthand sense of where agentic development is powerful and where it fails.",
     intro: [
+      "This was my first real software product! It tanked. But you learn by doing, not by watching. I’m still proud of it :)",
       "Showing is better than telling. It’s better to ship a product than to take a course. WorkPortfolio is a place to do exactly that.",
       "Build a professional portfolio of your projects, and keep it current. Each update takes less time than a LinkedIn post.",
     ],
