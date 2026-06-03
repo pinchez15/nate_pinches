@@ -104,7 +104,7 @@ export default function Home() {
             <p className="text-ink-muted">
               My family has been the best part of this adventure. Traveling
               the world with seven kids is the stuff of storybooks. Building
-              good software is just the topping.
+              good software is just the icing on the cake.
             </p>
           </div>
         </section>
