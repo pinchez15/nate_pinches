@@ -161,6 +161,16 @@ body::before {
     transition: none;
   }
 }
+/* Robustness: the Work section is the core content, so never let the scroll
+   reveal hide it when the page is printed or scripting is unavailable. The
+   no-JS case is also covered by a <noscript> override in layout.tsx. */
+@media print, (scripting: none) {
+  .reveal {
+    opacity: 1;
+    transform: none;
+    transition: none;
+  }
+}
 
 /* Selection */
 ::selection {

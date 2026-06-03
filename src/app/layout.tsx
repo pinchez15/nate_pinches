@@ -48,7 +48,14 @@ export default function RootLayout({
       lang="en"
       className={`${fraunces.variable} ${interTight.variable} ${ibmPlexMono.variable}`}
     >
-      <body>{children}</body>
+      <body>
+        {/* Without JS the IntersectionObserver never fires, so the scroll-reveal
+            would leave the entire Work section invisible. Reveal it for no-JS. */}
+        <noscript>
+          <style>{`.reveal{opacity:1 !important;transform:none !important}`}</style>
+        </noscript>
+        {children}
+      </body>
     </html>
   );
 }
