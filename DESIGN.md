@@ -46,7 +46,7 @@ Modular scale, base 16px (1rem), ratio ~1.333 (perfect fourth) for body, custom 
 |---|---|---|
 | `display-xl` | clamp(3.5rem, 7vw, 6.5rem) | Hero statement only. One per page. |
 | `display-lg` | clamp(2.25rem, 4vw, 3.5rem) | Section opener (rare). |
-| `h2` | 2rem | Section headings ("Work", "Background", "Get in touch"). |
+| `h2` (as `.label`) | `text-meta` (0.75rem) | Section headings ("My Work", "Background", "Get in touch") are semantic `<h2>` but styled as the mono `.label` eyebrow — a deliberate editorial inversion (small mono markers, not large headings). The display weight lives in the content below them, not the label. |
 | `h3` | 1.375rem | Project card titles, essay titles. |
 | `body-lg` | 1.125rem | Background paragraph, project descriptions. |
 | `body` | 1rem | Default. |
@@ -89,7 +89,7 @@ Warm. Restrained. One accent. Optional gold echo for the CappaWork sibling resem
 - **Density:** Spacious. The site holds the domain by giving content room to breathe.
 - **Scale:** `2xs:2 / xs:4 / sm:8 / md:16 / lg:24 / xl:32 / 2xl:48 / 3xl:80 / 4xl:128` (px).
 - **Section rhythm:** Major sections separated by `4xl` (128px) on desktop, `3xl` (80px) on mobile. The proof strip and hero share a tighter rhythm — the proof strip lands `2xl` (48px) below the hero to feel like an answer to it.
-- **Max content width:** `64rem` (1024px) for the page container. Body text column inside that caps at `36rem` (576px) — newspaper-column reading width.
+- **Max content width:** `64rem` (1024px) for the page container. Body text column inside that caps at `36rem` (576px / `max-w-xl`) on the homepage — newspaper-column reading width. Work **detail pages** (`/work/[slug]`) widen the reading column to `42rem` (`max-w-2xl`) because case-study prose and the "At a glance" fields are denser than the homepage; this is an intentional per-template width, not drift.
 - **Asymmetry:** Sections do not center inside the container. Content sits left-aligned with the left margin at `lg` (24px) on mobile, scaling to a generous `4xl+` (128px+) left inset on desktop. Right margin is loose. This asymmetry IS the editorial signal.
 
 ## Layout
