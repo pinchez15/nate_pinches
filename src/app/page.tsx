@@ -39,14 +39,17 @@ export default function Home() {
             style={{ maxWidth: "20ch" }}
           >
             I believe work is{" "}
-            <span className="text-accent">good</span>. Man was made to work
-            <span className="text-ink-faint"> — </span>
-            and through it, we{" "}
+            <span className="text-accent">good</span>. Through it we{" "}
             <em className="italic">become</em> who we ought to be.
           </h1>
           <p className="mt-10 max-w-xl text-body-lg text-ink-soft leading-relaxed">
-            Strategy, analytics, and software for founder-led service
-            businesses doing $3–10M.
+            But not all work is good. Much of it is drudgery that drains the
+            soul. We owe it to our coworkers, and our children, to make it
+            better.
+          </p>
+          <p className="mt-8 max-w-xl text-body-lg text-ink leading-relaxed">
+            AI is the most powerful tool in generations. Let it do the computer
+            work, so we can do the human work.
           </p>
         </section>
 
@@ -78,26 +81,27 @@ export default function Home() {
           <h2 className="label mb-10">Background</h2>
           <div className="max-w-xl space-y-6 text-body-lg text-ink-soft leading-relaxed">
             <p>
-              My career has been shaped, in no small part, by my wife{" "}
-              <span className="text-ink">Helene</span>. She’s a doctor in the
-              Navy — her postings have taken us across the world, and each new
-              city marked a new pivot. Clinical research at{" "}
-              <span className="text-ink">Harvard</span>. Management consulting
-              for the federal government. Product development at{" "}
-              <span className="text-ink">CVS</span>. Software sales, remote.
-              The full launch of CappaWork in Japan.
+              I’m an ambitious, driven generalist with a strange set of skills
+              and a career that looks random from the outside.{" "}
+              <span className="text-ink">Helene</span> is what holds it
+              together. She’s a doctor in the Navy, and we’ve followed her
+              postings across the world — in each new city I reinvented around a
+              different core skill. Clinical research at Harvard. Consulting for
+              the federal government. Product at CVS. Software, remote. Now
+              CappaWork, from Japan.
             </p>
             <p>
-              The unusual stack is{" "}
+              It’s the most excited I’ve been in my career, because it’s finally
+              converging:{" "}
               <em className="font-display italic text-ink">
-                strategy, analytics, change management, and shipping software
+                strategy, analytics, product development, and software
               </em>
-              . Most operators have one or two of those. Few have all four in
-              working order.
+              {" "}— all of it standing on good habits.
             </p>
             <p className="text-ink-muted">
-              Good work needs good habits. Good habits become virtues. That’s
-              the through-line.
+              Underneath everything are our seven kids. Japan has been
+              incredible, and the time I get with them is the best part of any
+              of it.
             </p>
           </div>
         </section>
