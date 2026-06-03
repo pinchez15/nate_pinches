@@ -76,7 +76,6 @@ body {
   background-position: center 38%;
   background-size: min(82vw, 820px);
   opacity: 0.09;
-  will-change: transform;
 }
 
 /* Display headings get the Fraunces opsz axis at large sizes */
