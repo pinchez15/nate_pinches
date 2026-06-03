@@ -29,15 +29,21 @@ const ibmPlexMono = IBM_Plex_Mono({
 export const metadata: Metadata = {
   title: "Nate Pinches",
   description:
-    "Strategy, analytics, and software for founder-led service businesses. Operator behind CappaWork.",
+    "I believe work is good. Through it we become who we ought to be.",
   metadataBase: new URL("https://natepinches.com"),
   openGraph: {
     title: "Nate Pinches",
     description:
-      "Strategy, analytics, and software for founder-led service businesses.",
+      "I believe work is good. Through it we become who we ought to be.",
     url: "https://natepinches.com",
     siteName: "Nate Pinches",
     type: "website",
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Nate Pinches",
+    description:
+      "I believe work is good. Through it we become who we ought to be.",
   },
 };
 
