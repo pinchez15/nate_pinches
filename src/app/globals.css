@@ -120,6 +120,30 @@ body {
   transform: translateX(3px);
 }
 
+/* Card entrance — fade + 12px rise on scroll-into-view, staggered via
+   --reveal-delay. Editorial restraint: 450ms ease-out, fires once, no movement
+   for users who prefer reduced motion. See DESIGN.md → Motion. */
+.reveal {
+  opacity: 0;
+  transform: translateY(12px);
+  transition:
+    opacity 450ms ease-out,
+    transform 450ms ease-out;
+  transition-delay: var(--reveal-delay, 0ms);
+  will-change: opacity, transform;
+}
+.reveal[data-revealed="true"] {
+  opacity: 1;
+  transform: none;
+}
+@media (prefers-reduced-motion: reduce) {
+  .reveal {
+    opacity: 1;
+    transform: none;
+    transition: none;
+  }
+}
+
 /* Selection */
 ::selection {
   background: var(--color-accent);

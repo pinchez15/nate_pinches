@@ -98,7 +98,8 @@ Warm. Restrained. One accent. Optional gold echo for the CappaWork sibling resem
 - **Hero:** Full-width container, content left-anchored with deep left inset on desktop. Hero statement breaks across 2–3 lines maximum. The customer line ("founder-led service businesses, $3–10M revenue") sits below in `body-lg` muted ink, indented to align with the second line of the hero.
 - **Proof strip:** Desktop: 4 columns, the 5× number is given visual prominence (larger size or italic accent). Mobile: 2×2 grid, 5× still leads. Each cell is a giant `Fraunces` number with a 2-line mono caption underneath.
 - **Background:** Single column, `body-lg`, max 36rem width.
-- **Work cards:** 2×2 grid on desktop, single column on mobile. Each card is a flat block — no shadow, no border-radius, no card chrome. Just whitespace, a small mono status label, the project name in `h3`, a one-liner, a tangible specific, and a link arrow if external.
+- **Work cards:** Responsive grid (2-col on `sm+`, single column on mobile); the set has grown past four, so it flows rather than locking to 2×2. Each card is a flat block — no shadow, no border-radius, no card chrome. Card front: a small mono status label, the project name in `h3` (links to its detail page, with a `→` arrow), a one-line descriptive subtitle in italic, a 2–3 sentence client-readable blurb, and a `•`-separated mono technology line. Cards animate in (see Motion → Work-card entrance).
+- **Work detail pages (approved deviation, 2026-06-02):** `/work/[slug]` carries the full case study (status, name, tagline, narrative intro, an "At a glance" block of Problem / Solution / Why it was hard / Impact, AI components, technology, optional live link). This deviates from the original single-scroll, "Not portfolio-grid" brief — approved by the user so the site can serve both prospective clients and technical evaluators with depth the card can't hold. Content source of truth: `src/content/work.ts`. The homepage stays a single scroll; detail pages are typographic and static (no entrance motion).
 - **Writing:** If present, list of titled links with a one-line dek and date. No grid, no card.
 - **Contact:** Single line. Email · Calendly (optional) · LinkedIn. Mono. Quiet.
 
@@ -113,9 +114,10 @@ Warm. Restrained. One accent. Optional gold echo for the CappaWork sibling resem
 
 - **Approach:** Minimal-functional.
 - **Permitted:** Inline link underline reveal on hover (150ms ease-out). Subtle accent-color transition on accent hover (150ms ease-out). External link arrow nudge on hover (100ms ease-out, 4px translate).
-- **Forbidden by brief:** Animated counters, parallax, hero video, scroll-driven choreography, entrance animations on sections.
+- **Work-card entrance (approved deviation, 2026-06-02):** Work cards fade in and rise 12px on scroll-into-view, staggered ~60ms per card, 450ms ease-out, firing once. Disabled (rendered static) under `prefers-reduced-motion`. This is the one place motion exceeds the 250ms cap and the one permitted entrance animation — approved by the user to give the expanded Work section life without tipping into SaaS-marketing motion. Implemented in CSS + a small IntersectionObserver (`.reveal` in globals.css, `WorkCard.tsx`); no GSAP. Scope is limited to Work cards — the proof strip, hero, and detail-page sections stay static.
+- **Forbidden by brief:** Animated counters, parallax, hero video, scroll-driven choreography, entrance animations on sections *other than the Work-card entrance above*.
 - **Easing:** `ease-out` for enter, `ease-in` for exit, `ease-in-out` for shifts.
-- **Duration:** All UI motion stays under 250ms. Anything longer feels theatrical and breaks the operator voice.
+- **Duration:** UI motion stays under 250ms, with the single documented exception of the Work-card entrance (450ms). Anything longer feels theatrical and breaks the operator voice.
 
 ## Voice (tone reference)
 
@@ -153,3 +155,5 @@ These are off-limits regardless of how well-implemented they might be:
 | 2026-05-13 | Fraunces + Inter Tight + IBM Plex Mono as the open-source stack | Brief named Fraunces/GT Sectra/Tiempos for display and Inter Tight/ABC Diatype for body. Fraunces and Inter Tight are the immediately-shippable open variants on Google Fonts; IBM Plex Mono pairs warmly with Fraunces. Premium alternates noted in the type stack table for future upgrade. |
 | 2026-05-13 | Dark mode deferred | Brief did not call for it; the warm paper aesthetic does not benefit from a dark equivalent. Revisit only if a clear need emerges. |
 | 2026-05-13 | No accent except in 3 surgical spots above the fold | Brief: "accent color used surgically on one or two words." Extending: hero accent + proof-strip lead number + one inline link, then the accent disappears. Restraint is the differentiator from category. |
+| 2026-06-02 | Added `/work/[slug]` case-study detail pages | User expanded Work to 8 case studies that must serve both prospective clients and technical evaluators. A one-liner card can't hold that depth, so cards now link to per-project detail pages. Deviates from the original single-scroll / "Not portfolio-grid" framing; homepage remains a single scroll. Content lives in `src/content/work.ts`. |
+| 2026-06-02 | Work-card entrance motion (level A) | User requested motion on the cards. Chose the restrained option: fade + 12px rise on scroll-into-view, staggered, 450ms ease-out, once, reduced-motion safe. CSS + IntersectionObserver, no GSAP. Crosses the brief's "no entrance animations" rule and 250ms cap by explicit approval; scope limited to Work cards to avoid reading as SaaS-marketing motion. |

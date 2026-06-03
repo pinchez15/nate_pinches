@@ -1,9 +1,5 @@
-type Project = {
-  name: string;
-  status: string;
-  description: string;
-  href?: string;
-};
+import { work } from "@/content/work";
+import { WorkCard } from "@/components/WorkCard";
 
 const proofPoints: { value: string; line1: string; line2: string; lead?: boolean }[] = [
   {
@@ -26,36 +22,6 @@ const proofPoints: { value: string; line1: string; line2: string; lead?: boolean
     value: "12 mo",
     line1: "building agentic systems",
     line2: "full-time, since 2025",
-  },
-];
-
-const projects: Project[] = [
-  {
-    name: "CappaWork",
-    status: "active",
-    description:
-      "Your AI Team. AI-native consulting and build engagements for founder-led businesses. The studio I run.",
-    href: "https://cappawork.com",
-  },
-  {
-    name: "Karibu Health",
-    status: "pilot, Uganda",
-    description:
-      "Clinical documentation for low-resource clinics. Built for the doctor with no admin staff and a patient already waiting.",
-    href: "https://www.karibu.health",
-  },
-  {
-    name: "Knock",
-    status: "in development",
-    description:
-      "AI-native recruiting. Sourcing and screening as one continuous loop, not a pipeline of disconnected tools.",
-    href: "https://www.knockrecruit.io",
-  },
-  {
-    name: "Household",
-    status: "in development",
-    description:
-      "A Catholic family formation app, built with Helene. Liturgical calendar, family rule of life, and the small daily rhythms that hold a family together. Building it for our seven kids first.",
   },
 ];
 
@@ -137,32 +103,14 @@ export default function Home() {
         </section>
 
         {/* Work ------------------------------------------------------------ */}
-        <section className="border-t border-ink-faint/40 pt-14 pb-24 sm:pb-32">
-          <h2 className="label mb-12">Work</h2>
+        <section
+          id="work"
+          className="border-t border-ink-faint/40 pt-14 pb-24 sm:pb-32"
+        >
+          <h2 className="label mb-12">My Work</h2>
           <ul className="grid grid-cols-1 gap-x-12 gap-y-14 sm:grid-cols-2">
-            {projects.map((p) => (
-              <li key={p.name} className="flex flex-col gap-4 max-w-md">
-                <span className="font-mono text-meta uppercase text-ink-muted">
-                  {p.status}
-                </span>
-                <h3 className="font-display text-card text-ink">
-                  {p.href ? (
-                    <a
-                      href={p.href}
-                      target="_blank"
-                      rel="noreferrer"
-                      className="link link-arrow"
-                    >
-                      {p.name}
-                    </a>
-                  ) : (
-                    p.name
-                  )}
-                </h3>
-                <p className="text-base text-ink-soft leading-relaxed">
-                  {p.description}
-                </p>
-              </li>
+            {work.map((project, i) => (
+              <WorkCard key={project.slug} project={project} index={i} />
             ))}
           </ul>
         </section>
