@@ -81,27 +81,30 @@ export default function Home() {
           <h2 className="label mb-10">Background</h2>
           <div className="max-w-xl space-y-6 text-body-lg text-ink-soft leading-relaxed">
             <p>
-              I’m an ambitious, driven generalist with a strange set of skills
+              I’m an ambitious, driven generalist with a wide set of skills
               and a career that looks random from the outside.{" "}
-              <span className="text-ink">Helene</span> is what holds it
+              <span className="text-ink">My wife, Helene,</span> holds it all
               together. She’s a doctor in the Navy, and we’ve followed her
-              postings across the world — in each new city I reinvented around a
-              different core skill. Clinical research at Harvard. Consulting for
-              the federal government. Product at CVS. Software, remote. Now
-              CappaWork, from Japan.
+              postings across the world — from DC to Boston to Japan. In each
+              new city I reinvented around a different core skill. Oncology
+              research at Harvard. Consulting for the federal government.
+              Product at CVS. Software sales, remote. Now CappaWork, from
+              Japan.
             </p>
             <p>
-              It’s the most excited I’ve been in my career, because it’s finally
-              converging:{" "}
+              It’s the most excited I’ve been in my career, because all my
+              skills are suddenly converging. I’m not just an idea guy anymore.
+              I can build it from beginning to end:{" "}
               <span className="text-ink">
                 strategy, analytics, product development, and software
               </span>
-              {" "}— all of it standing on good habits.
+              {" "}— and the whole stack stands on good habits. Products must
+              be profitable, delightful, simple, and most importantly, good.
             </p>
             <p className="text-ink-muted">
-              Underneath everything are our seven kids. Japan has been
-              incredible, and the time I get with them is the best part of any
-              of it.
+              My family has been the best part of this adventure. Traveling
+              the world with seven kids is the stuff of storybooks. Building
+              good software is just the topping.
             </p>
           </div>
         </section>
